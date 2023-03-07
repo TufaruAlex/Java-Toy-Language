@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.program.ProgramController">
+    <TableView fx:id="heapTable" layoutX="50.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+          <TableColumn fx:id="addressColumn" prefWidth="100.0" text="Address" />
+          <TableColumn fx:id="valueColumn" prefWidth="100.0" text="Value" />
+      </columns>
+    </TableView>
+    <Label layoutX="50.0" layoutY="25.0" text="Heap Table" />
+    <ListView fx:id="outputList" layoutX="272.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="272.0" layoutY="25.0" text="Output" />
+    <ListView fx:id="fileList" layoutX="495.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="495.0" layoutY="25.0" text="File Table" />
+    <Label layoutX="50.0" layoutY="260.0" text="Program state identifiers" />
+    <ListView fx:id="programStateList" layoutX="50.0" layoutY="284.0" prefHeight="200.0" prefWidth="200.0" />
+    <ListView fx:id="executionStackList" layoutX="272.0" layoutY="284.0" prefHeight="200.0" prefWidth="200.0" />
+    <Label layoutX="269.0" layoutY="260.0" text="Execution stack" />
+    <TableView fx:id="symbolTable" layoutX="495.0" layoutY="284.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="symVariableColumn" prefWidth="100.0" text="Variable" />
+            <TableColumn fx:id="symValueColumn" prefWidth="100.0" text="Value" />
+        </columns>
+    </TableView>
+    <Label layoutX="495.0" layoutY="260.0" text="Symbol table" />
+    <TextField fx:id="numberOfProgramStates" editable="false" layoutX="197.0" layoutY="526.0" />
+    <Label layoutX="201.0" layoutY="500.0" text="Number of program states" />
+   <Button fx:id="oneStep" layoutX="400.0" layoutY="521.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="144.0" text="One Step" />
+</AnchorPane>
